@@ -1,0 +1,33 @@
+{
+  "name": "test",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "commit": "commit",
+    "prepare": "yarn && husky install && lint-staged",
+    "lint": "eslint --fix",
+    "test": "exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "13.1.0",
+    "@commitlint/config-conventional": "13.1.0",
+    "@commitlint/prompt-cli": "13.1.0",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.24.2",
+    "husky": "7.0.0",
+    "lint-staged": "11.1.2",
+    "standard-version": "9.3.1"
+  },
+  "lint-staged": {
+    "*.js": "yarn lint"
+  },
+  "hooks": {
+    "pre-commit": "npm test && npx lint-staged",
+    "commit-msg": "npx --no-install commitlint --edit $1"
+  }
+}
