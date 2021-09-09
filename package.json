@@ -1,13 +1,14 @@
 {
   "name": "your-proyect",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
     "prepare": "husky install",
     "lint": "eslint --fix",
-    "test": "exit 0"
+    "test": "exit 0",
+    "release": "standard-version"
   },
   "keywords": [],
   "author": "",

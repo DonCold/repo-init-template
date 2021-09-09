@@ -55,7 +55,7 @@ module.exports = {
           },
           style: {
             description:
-            'Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)',
+            'Changes that do not affect the meaning of the code',
             title: 'Styles',
             emoji: '💎',
           },
@@ -77,13 +77,13 @@ module.exports = {
           },
           build: {
             description:
-            'Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)',
+            'Changes that affect the build system or external dependencies',
             title: 'Builds',
             emoji: '🛠',
           },
           ci: {
             description:
-            'Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)',
+            'Changes to our CI configuration files and scripts',
             title: 'Continuous Integrations',
             emoji: '⚙️',
           },
